@@ -1,0 +1,7 @@
+set autoindent
+set backwards
+set const
+set cut
+set matchbrackets "(<[{)>]}"
+set tabsize 4
+set tabstospaces

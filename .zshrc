@@ -8,8 +8,8 @@ export ZSH=/home/gautam/.oh-my-zsh
 
 echo " \t  Hello BRO, Welcome Back:"
 ZSH_THEME="agnoster" # this is the cool theme
-#ZSH_THEME="random" # this sets the random theme
-#ZSH_THEME="apple" # the apple theme. Simple and elegeant
+#ZSH_THEME="ys" # this is one more theme that also shows time
+#ZSH_THEME="gnzh" #. Simple and elegeant
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,12 +86,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
  #alias zshconfig="mate ~/.zshrc"
  #alias ohmyzsh="mate ~/.oh-my-zsh"
-alias index="nano index.txt"
+alias index="vim index.txt"
 alias code="cd /home/gautam/code"
 alias please="sudo apt-get"
 alias godown="sudo shutdown -h now"
 alias toinst="vim /home/gautam/code/to-install.txt" # The file containing all the names of the files to install in a new linux  machine
-
+alias l="ls -a"
 # some git alias
 alias buckpush="git push -u bucket"
 alias hubpush="git push -u ghub"
@@ -99,8 +99,12 @@ alias hubpush="git push -u ghub"
 # Shortcuts for various directories.
 # uncomment theese to use them.
 alias c="cd /home/gautam/code/c" # SHORT cut for the C directory
-alias cpp="cd /home/gautam/code/Cpp" #Shortcut for the Cpp directory
+#alias cpp="cd /home/gautam/code/Cpp" #Shortcut for the Cpp directory
 alias py="cd /home/gautam/code/python" # Shortcut for the python directory
+
+## For python virtual environment 
+
+export WORKON_HOME=~/.virtualenvs
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

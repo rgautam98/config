@@ -94,7 +94,7 @@ alias toinst="vim /home/gautam/code/to-install.txt" # The file containing all th
 
 # some git alias
 alias buckpush="git push -u bucket"
-alias hubpush="git push -u ghib"
+alias hubpush="git push -u ghub"
 
 # Shortcuts for various directories.
 # uncomment theese to use them.

@@ -96,11 +96,15 @@ let g:NERDTreeMapPreview="<F4>"
 
 execute pathogen#infect()
 
-" These map the ckys to move in between different windows in vim
+" These map the keys to move in between different windows in vim
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+"These are the various key mappings for tabs in vim
+map <C-a> :tabn<CR>
+map <C-n> :tabe
 
 "syntax enable
 "set background=dark "This is the dark background

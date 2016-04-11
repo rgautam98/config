@@ -1,0 +1,10 @@
+# This is the config file for GNU Screen.
+#term xterm
+term xterm-256color
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kw}%-w%{= kR}(%{w}%n %t%{-}%{= kR})%?%{= .kw}%+w%? %{.kw}%=%C:%s %A    %d %M %Y  " #B&W & date&time
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+vbell off

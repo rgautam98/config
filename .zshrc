@@ -7,10 +7,11 @@ export ZSH=/home/gautam/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 
 echo " \t  Hello BRO, Welcome Back:"
+#python one.py
 ZSH_THEME="agnoster" # this is the cool theme
 #ZSH_THEME="ys" # this is one more theme that also shows time
 #ZSH_THEME="gnzh" #. Simple and elegeant
-
+#ZSH_THEME="apple"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -88,14 +89,20 @@ source $ZSH/oh-my-zsh.sh
  #alias ohmyzsh="mate ~/.oh-my-zsh"
 alias index="vim index.txt"
 alias code="cd /home/gautam/code"
+alias base="/home/gautam/codebase"
 alias please="sudo apt-get"
 alias godown="sudo shutdown -h now"
-alias toinst="vim /home/gautam/code/to-install.txt" # The file containing all the names of the files to install in a new linux  machine
+alias comeagain="sudo reboot -h now"
+alias toinst="vim /home/gautam/code/Misc/to-install.txt" # The file containing all the names of the files to install in a new linux  machine
 alias l="ls -a"
 # some git alias
 alias buckpush="git push -u bucket"
 alias hubpush="git push -u ghub"
 
+#These are some alias'es for redis
+
+alias redst="sudo service redis_6379 start"
+alias redstp="sudo service redis_6379 stop"
 # Shortcuts for various directories.
 # uncomment theese to use them.
 alias c="cd /home/gautam/code/c" # SHORT cut for the C directory

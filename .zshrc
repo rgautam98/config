@@ -117,16 +117,5 @@ alias i="sh ~/init-stop.sh"
 
 alias bbon="sudo pon dsl-provider"
 alias bboff="sudo poff dsl-provider"
-
-# Proxy aliases
-alias proxy1="export http_proxy='http://0001:password@192.168.23.32:3128';export https_proxy='http://0001:password@192.168.23.32:3128'"
-alias proxy9="export http_proxy='http://1210315909:PAssw0rd@192.168.23.32:3128';export https_proxy='https://1210315909:PAssw0rd@192.168.23.32:3128'"
-alias proxyoff="export http_proxy='';export https_proxy=''"
-
-alias apt-proxy="python /home/gautam/code/GITAM-Proxy/set-proxy.py"
-
-alias gitproxyoff="git config --global http.proxy ''; git config --global https.proxy ''"
-alias gitproxyon="git config --global http.proxy http://1210315909:PAssw0rd@192.168.23.32:3128;git config --global https.proxy https://1210315909:PAssw0rd@192.168.23.32:3128"
-
-### Added by the Heroku Toolbelt
+## Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

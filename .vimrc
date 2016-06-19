@@ -1,4 +1,4 @@
-" you can add anything in a comment by putting it in "
+"you can add anything in a comment by putting it in "
 
 set nocompatible
 filetype off
@@ -38,7 +38,7 @@ syntax enable
 
 " set the colour of the vim editor here (below)
 
-:colo 256-grayvim  ",this is the default one
+":colo 256-grayvim  ",this is the default one
 ":colo github  "White
 
 ":colo badwolf  "just testing
@@ -48,6 +48,7 @@ if has("gui_running")
 	set guioptions+=e
 	set t_Co=256
 	set guitablabel=%M\ %t
+        set background=dark
 endif
 set smarttab
 let g:promptline_preset = 'full'
@@ -116,7 +117,28 @@ map - <C-w>-
 map > <C-w>>
 map < <C-w><
 
+" ================================= SOLARIZED THEMES   =================================
+" This is for the solorised themes in vim
 "syntax enable
-"set background=dark "This is the dark background
+syntax on "From the stackoverflow ans
+let g:solarized_termcolors=256
+set background=dark "This is the dark background
 "set background=light "This is the light background
-":colo solarized
+colorscheme solarized
+"set t_Co=256
+"  ============================== EOL  ==========================================
+
+
+" =============================  CODE FOLDING ===============================
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable " To rermove all code folds during startup
+set foldlevel=2
+
+" These are the commands :
+" za : toggles
+" zc : closes the fold
+" zo : opens the fold
+" zM closes all the folds in the file
+" zR : Opens all the folds in the file
+" ================= END  ========================

@@ -95,10 +95,11 @@ alias godown="sudo shutdown -h now"
 alias comeagain="sudo reboot -h now"
 alias toinst="vim /home/gautam/code/Misc/to-install.txt" # The file containing all the names of the files to install in a new linux  machine
 alias l="ls -a"
+alias stp="cd /home/gautam && sh init-stop.sh"
+
 # some git alias
 alias buckpush="git push -u bucket"
 alias hubpush="git push -u ghub"
-
 #These are some alias'es for redis
 
 alias redst="sudo service redis_6379 start"
@@ -106,12 +107,26 @@ alias redstp="sudo service redis_6379 stop"
 # Shortcuts for various directories.
 # uncomment theese to use them.
 alias c="cd /home/gautam/code/c" # SHORT cut for the C directory
-#alias cpp="cd /home/gautam/code/Cpp" #Shortcut for the Cpp directory
 alias py="cd /home/gautam/code/python" # Shortcut for the python directory
 
-## For python virtual environment 
+# Misc aliases
+alias lab="ssh 1210315909@192.168.64.90 -p 22"
+alias i="sh ~/init-stop.sh"
 
-export WORKON_HOME=~/.virtualenvs
+# For internet
+
+alias bbon="sudo pon dsl-provider"
+alias bboff="sudo poff dsl-provider"
+
+# Proxy aliases
+alias proxy1="export http_proxy='http://0001:password@192.168.23.32:3128';export https_proxy='http://0001:password@192.168.23.32:3128'"
+alias proxy9="export http_proxy='http://1210315909:PAssw0rd@192.168.23.32:3128';export https_proxy='https://1210315909:PAssw0rd@192.168.23.32:3128'"
+alias proxyoff="export http_proxy='';export https_proxy=''"
+
+alias apt-proxy="python /home/gautam/code/GITAM-Proxy/set-proxy.py"
+
+alias gitproxyoff="git config --global http.proxy ''; git config --global https.proxy ''"
+alias gitproxyon="git config --global http.proxy http://1210315909:PAssw0rd@192.168.23.32:3128;git config --global https.proxy https://1210315909:PAssw0rd@192.168.23.32:3128"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
